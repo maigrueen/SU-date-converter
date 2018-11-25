@@ -46,6 +46,13 @@ input[type=time] {
   padding: 10px;
 }
 
+input[type=text] {
+  font-family: 'Sintony', sans-serif;
+  border: none;
+  width: 70%;
+  padding: 10px;
+}
+
 th {
   font-family: 'Sintony', sans-serif;
   color: #273582;
