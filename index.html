@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Updates Date Converter</title>
+  <link rel="stylesheet" href="SU-date-converter.css">
+  <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="header">
+    <h2>Input</h2>
+    <table>
+      <tr>
+        <th style="text-align:left"></th>
+        <th style="text-align:left">Startwerte</th>
+      </tr>
+      <tr>
+        <th style="text-align:left">Datum</th>
+        <td><input type="date" id="newDate"></td>
+      </tr>
+      <tr>
+        <th style="text-align:left">Wartungsfenster Beginn</th>
+        <td><input type="time" id="newStarttime"></td>
+      </tr>
+      <tr>
+        <th style="text-align:left">Wartungsfenster Ende</th>
+        <td><input type="time" id="newEndtime"></td>
+      </tr>
+      <tr>
+        <th style="text-align:left">Wiederholung (in Tagen)</th>
+        <td><input type="number" id="newReRun" placeholder="z.B. 14"></td>
+      </tr>
+    </table>
+    <br />
+    <button type="button" id="btn"><i class="fal fa-plus-circle"></i> Auswerten</button>
+  </div>
+
+  <div>
+    <h2>Output</h2>
+    <input type="text" id="outputString" placeholder="keine vollständige Eingabe">
+  </div>
+
+  <script src="SU-date-converter.js"></script>
+</body>
+</html>
